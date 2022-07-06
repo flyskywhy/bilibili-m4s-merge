@@ -1,6 +1,6 @@
 
 -------------------------
-bilibili video merge
+bilibili m4s merge
 --
 >bilibili 下载后的视频是 video.m4s 和 audio.m4s 格式，将其合并、转换为 mp4
 

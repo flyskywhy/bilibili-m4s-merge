@@ -38,7 +38,12 @@ function do_merge() {
             out_file="$out_path/$av_page $av_part.mp4"
         else
             out_path=$ROOT_PATH
-            out_file="$out_path/$av_title $av_part.mp4"
+            if [ "$av_title" == "$av_part" ]
+            then
+                out_file="$out_path/$av_title.mp4"
+            else
+                out_file="$out_path/$av_title $av_part.mp4"
+            fi
         fi
 
         echo "开始合并 [$in_path/] 为 $out_file"
